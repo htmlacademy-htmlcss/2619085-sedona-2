@@ -1,0 +1,294 @@
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+body {
+    margin: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.header {}
+
+.header-nav {}
+
+.logo-link {}
+
+.logo-img {}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-item {}
+
+.menu-link {
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.user-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.user-menu-item {}
+
+.user-menu-link {
+    text-decoration: none;
+}
+
+.visually-hidden {}
+
+.favorite-number {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    background-color: #7DB54F;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 50%;
+
+}
+
+.wish {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #756157;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 8px 34px;
+}
+
+.main {}
+
+.welcome {}
+
+.welkome-img {}
+
+.reasons {}
+
+.description {}
+
+.description-title {
+    color: #000000;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.description-text {
+    color: #333333;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.reasons-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.reasons-list-item {}
+
+.reasons-card {}
+
+.card-title {
+    color: #000000;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card-text {
+    color: #333333;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.reasons-img {}
+
+.invite {}
+
+.invate-text-box {}
+
+.invite-title {
+    color: #000000;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.invite-text {
+    color: #333333;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.invite-card {
+    margin: 0;
+    padding: 0;
+    line-height: none;
+}
+
+.invite-card-item {}
+
+.house {}
+
+.food {}
+
+.present {}
+
+.hotels {}
+
+.hotels-title {
+    color: #000000;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hotels-text {
+    color: #333333;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.hotels-link {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    background-color: #756157;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 8px 50px;
+}
+
+.footer {}
+
+.subscription {}
+
+.subscription-text-box {}
+
+.subscription-tittle {
+    color: ;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.subscription-text {
+    color: #333333;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.subscription-form {}
+
+.form-input {
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    vertical-align: middle;
+    background-color: #f2f2f2;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border: none;
+}
+
+.form-button {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: #82B3D3;
+    padding: 8px 50px;
+    border: none;
+}
+
+.contact {}
+
+.social {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social-item {}
+
+.social-link {}
+
+.phone {
+    color: #000000;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.academy-link {}
