@@ -1,36 +1,48 @@
 @font-face {
-    font-family: "PT Sans";
-    src: url("../fonts/ptsans-400.woff2") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+	font-family: "PT Sans";
+	src: url("../fonts/ptsans-400.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: "PT Sans";
-    src: url("../fonts/ptsans-700.woff2") format("woff2");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+	font-family: "PT Sans";
+	src: url("../fonts/ptsans-700.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0);
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	border: 0;
+	clip: rect(0 0 0 0);
 }
 
 body {
-    margin: 0;
-    font-family: "PT Sans", Arial, sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
+	margin: 0;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	background-color: #f2f2f2;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100hv;
+	background-color: #fff;
+	width: 1200px;
+	margin: 0 auto;
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 .header {}
@@ -42,240 +54,327 @@ body {
 .logo-img {}
 
 .menu {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .menu-item {}
 
 .menu-link {
-    color: #000000;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    text-decoration: none;
+	color: #000000;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	text-decoration: none;
 }
 
 .user-menu {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .user-menu-item {}
 
 .user-menu-link {
-    text-decoration: none;
+	text-decoration: none;
 }
 
-.visually-hidden {}
-
 .favorite-number {
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 10px;
-    background-color: #7DB54F;
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-    border-radius: 50%;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 10px;
+	background-color: #7DB54F;
+	width: 20px;
+	height: 20px;
+	padding: 5px;
+	border-radius: 50%;
 
 }
 
 .wish {
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    background-color: #756157;
-    text-transform: uppercase;
-    border-radius: 4px;
-    padding: 8px 34px;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	background-color: #756157;
+	text-transform: uppercase;
+	border-radius: 4px;
+	padding: 8px 34px;
 }
 
-.main {}
+.main {
+	flex-grow: 1;
+}
 
-.welcome {}
+.welcome {
+	background-color: #2d4758;
+	background-image: url(../image/welkome/white-vector.svg), url(../image/welkome/index-background.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto, cover;
+	background-position: bottom, 0 0;
+	min-height: 485px;
+	box-sizing: border-box;
+}
 
-.welkome-img {}
+.welkome-img {
+	display: block;
+	margin: 0 auto;
+	padding-top: 49px;
+	padding-bottom: 84px;
+}
 
 .reasons {}
 
-.description {}
+.description {
+	margin: 0 auto;
+	padding-top: 43px;
+	text-align: center;
+	max-width: 700px;
+}
 
 .description-title {
-    color: #000000;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    text-align: center;
-    text-transform: uppercase;
+	color: #000000;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	text-transform: uppercase;
 }
 
 .description-text {
-    color: #333333;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-    text-align: center;
+	color: #333333;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 26px;
 }
 
 .reasons-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .reasons-list-item {}
 
 .reasons-card {}
 
-.card-title {
-    color: #000000;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    text-transform: uppercase;
+.reasons-card-title {
+	color: #000000;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	text-transform: uppercase;
 }
 
-.card-text {
-    color: #333333;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
+.reasons-card-text {
+	color: #333333;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
 }
 
 .reasons-img {}
 
 .invite {}
 
-.invate-text-box {}
+.invate-text-box {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 14px 0 39px;
+	box-sizing: border-box;
+
+}
 
 .invite-title {
-    color: #000000;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    text-align: center;
-    text-transform: uppercase;
+	color: #000000;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	text-align: center;
+	text-transform: uppercase;
 
 }
 
 .invite-text {
-    color: #333333;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-    text-align: center;
+	color: #333333;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 26px;
+	text-align: center;
 }
 
 .invite-card {
-    margin: 0;
-    padding: 0;
-    line-height: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.invite-card-item {}
+.invite-card-item {
+	width: 400px;
+	padding: 184px 0 81px;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: center 83px;
+}
 
-.house {}
+.invite-card-item:nth-child(2n-1) {
+	background-color: rgba(131, 179, 211, 0.12);
+}
 
-.food {}
+.invite-card-title {
+	color: #000000;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	text-transform: uppercase;
+	width: 230px;
+	margin: 0 auto 29px;
+}
 
-.present {}
+.invite-card-text {
+	color: #333333;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	width: 230px;
+	margin: 0 auto;
+}
 
-.hotels {}
+.house {
+	background-image: url(../image/invite-card/house.svg);
+}
+
+.food {
+	background-image: url(../image/invite-card/food.svg);
+}
+
+.present {
+	background-image: url(../image/invite-card/present.svg);
+}
+
+.hotels {
+	text-align: center;
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 96px 0 44px;
+	box-sizing: border-box;
+}
 
 .hotels-title {
-    color: #000000;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    text-align: center;
-    text-transform: uppercase;
+	margin: 0 0 21px;
+	color: #000000;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	text-transform: uppercase;
 }
 
 .hotels-text {
-    color: #333333;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-    text-align: center;
+	margin: 0;
+	color: #333333;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 26px;
 }
 
 .hotels-link {
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 36px;
-    background-color: #756157;
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 4px;
-    padding: 8px 50px;
+	display: inline-block;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 36px;
+	background-color: #756157;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 4px;
+	padding: 9px 50px;
+	margin: 52px 0;
 }
 
 .footer {}
 
-.subscription {}
+.subscription {
+	background-color: #2d4758;
+	background-image: url(../image/form/input-background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	min-height: 414px;
+	box-sizing: border-box;
+}
 
-.subscription-text-box {}
+.subscription-box {
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
 
 .subscription-tittle {
-    color: ;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    text-align: center;
-    text-transform: uppercase;
+	margin: 0;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	text-transform: uppercase;
+	padding: 96px 0 20px;
 }
 
 .subscription-text {
-    color: #333333;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-    text-align: center;
+	margin: 0 0 55px;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 26px;
+
 }
 
-.subscription-form {}
+.subscription-form {
+	display: flex;
+	margin: 0 auto;
+	width: 685px;
+}
 
 .form-input {
-    color: #000000;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    vertical-align: middle;
-    background-color: #f2f2f2;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    border: none;
+	width: 452px;
+	font-family: inherit;
+	color: #000000;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	background-color: #f2f2f2;
+	padding-left: 21px;
+	border: none;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
 }
 
 .form-button {
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 36px;
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
-    background-color: #82B3D3;
-    padding: 8px 50px;
-    border: none;
+	font-family: inherit;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 36px;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #82B3D3;
+	padding: 8px 51px;
+	border: none;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
 }
 
-.contact {}
+.social {}
 
-.social {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.social-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .social-item {}
@@ -283,12 +382,12 @@ body {
 .social-link {}
 
 .phone {
-    color: #000000;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 40px;
-    text-align: center;
-    text-transform: uppercase;
+	color: #000000;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 .academy-link {}
