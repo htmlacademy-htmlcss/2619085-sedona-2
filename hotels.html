@@ -11,20 +11,21 @@
   <body>
     <div class="container">
       <header class="header">
-        <a class="logo-link" href="#">
+        <a class="logo-link" href="./index.html">
           <img class="logo-img" src="./images/logo/logo-sedona.svg" alt="Логотип Седоны" width="140" height="70">
         </a>
         <nav class="header-nav">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Главная</a>
+              <a class="nav-link" href="./index.html">Главная</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">О Седоне</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./hotels.html">Гостиницы</a>
+              <a class="nav-link  active-inner" href="#">Гостиницы</a>
             </li>
+          </ul>
           </ul>
           <ul class="user-nav">
             <li class="user-nav-item">
@@ -55,115 +56,14 @@
         </nav>
       </header>
       <main class="main">
-        <section class="welcome">
-          <h1 class="visually-hidden">Туристический центр Седона.</h1>
-          <img class="welkome-img" src="./images/welkome/welcome-text.svg"
-            alt="Надпись добро пожаловать в Седону на фоне каньёна." width="458" height="352">
-        </section>
-        <section class="reasons">
-          <div class="description">
-            <h2 class="description-title">
-              Седона — небольшой городок в Аризоне, заслуживающий большего!
-            </h2>
-            <p class="description-text">
-              Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
-            </p>
-          </div>
-          <ul class="reasons-list">
-            <li class="reasons-list-img">
-              <div class="reasons-box">
-                <h3 class="reasons-img-title">Настоящий городок</h3>
-                <p class="reasons-img-text">
-                  Седона — не аттракцион для туристов, там течёт своя жизнь
-                </p>
-              </div>
-              <img class="reasons-img" src="./images/reasons/real-city.jpg" alt="Фотография города с зеленью и домом."
-                width="800" height="385">
-            </li>
-            <li class="reasons-list-item">
-              <div class="reasons-box">
-                <h3 class="reasons-list-title">Небольшая площадь</h3>
-                <p class="reasons-list-text">
-                  Все достопримечательности находятся очень близко
-                </p>
-              </div>
-            </li>
-            <li class="reasons-list-item">
-              <div class="reasons-box">
-                <h3 class="reasons-list-title">Красивая дорога</h3>
-                <p class="reasons-list-text">
-                  Ехать в Седону из Лас-Вегаса совсем не скучно!
-                </p>
-              </div>
-            </li>
-            <li class="reasons-list-item">
-              <div class="reasons-box">
-                <h3 class="reasons-list-title">Мало туристов</h3>
-                <p class="reasons-list-text">
-                  Большинство едет в Гранд Каньон и толпится там
-                </p>
-              </div>
-            </li>
-            <li class="reasons-list-img">
-              <img class="reasons-img" src="./images/reasons/devil-bridge.jpg"
-                alt="Фотография каньёна с каменным мостом." width="800" height="385">
-              <div class="reasons-box">
-                <h3 class="reasons-img-title">Там есть мост дьявола</h3>
-                <p class="reasons-img-text">
-                  Да, по нему можно пройти! Если вы осмелитесь, разумеется
-                </p>
-              </div>
-            </li>
-          </ul>
-        </section>
-        <section class="invite">
-          <div class="invate-text-box">
-            <h2 class="invite-title">
-              Приезжайте в Седону отдохнуть в&nbsp;комфорте и уюте!
-            </h2>
-            <p class="invite-text">
-              Опытный персонал и качественное обслуживание!
-            </p>
-          </div>
-          <ul class="invite-card">
-            <li class="invite-card-item house">
-              <h3 class="invite-card-title">Жильё</h3>
-              <p class="invite-card-text">
-                Рекомендуем пожить в&nbsp;настоящем мотеле,
-                <br>всё как в кино!
-              </p>
-            </li>
-            <li class="invite-card-item food">
-              <h3 class="invite-card-title">Еда</h3>
-              <p class="invite-card-text">
-                Всегда заказывайте топовый&nbsp;фирменный бургер, вы не разочаруетесь!
-              </p>
-            </li>
-            <li class="invite-card-item present">
-              <h3 class="invite-card-title">Сувениры</h3>
-              <p class="invite-card-text">
-                Не только китайского,
-                <br>но и настоящего местного производства!
-              </p>
-            </li>
-          </ul>
-        </section>
-        <section class="hotels">
-          <h2 class="hotels-title">Заинтересовались?</h2>
-          <p class="hotels-text">
-            Укажите предполагаемые даты поездки,
-            <br>и мы покажем вам лучшие предложения гостиниц в Седоне
-          </p>
-          <a class="hotels-link" href="#">Поиск гостиницы в Седоне</a>
-        </section>
-        <section class="subscription">
+
+        <section class="subscription-inner">
           <div class="subscription-box">
-            <h2 class="subscription-tittle">Подпишитесь на рассылку</h2>
-            <p class="subscription-text">
+            <h2 class="subscription-tittle-inner">Подпишитесь на рассылку</h2>
+            <p class="subscription-text-inner">
               Только полезная информация и никакого спама, честное бойскаутское!
             </p>
           </div>
-
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="form-input" type="email" name="user-email" placeholder="Ваш e-mail" required>
             <button class="form-button" type="submit">Подписаться</button>
@@ -247,7 +147,6 @@
                 fill="currentColor" />
             </svg>
           </a></div>
-
       </footer>
     </div>
   </body>
