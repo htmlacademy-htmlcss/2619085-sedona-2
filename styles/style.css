@@ -701,6 +701,20 @@ body {
 	left: calc(50% - 46px);
 }
 
+.header-inner {
+	background-color: #2d4758;
+	background-image: url(../images/form/catalog-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	min-height: 412px;
+	box-sizing: border-box;
+	color: #ffffff;
+}
+
+
+
+
 
 
 
@@ -727,5 +741,4 @@ body {
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 26px;
-
 }

@@ -56,6 +56,111 @@
         </nav>
       </header>
       <main class="main">
+        <header class="header-inner">
+          <h1 class="header-inner-title">Гостиницы Седоны</h1>
+          <ul class="breadcrambs">
+            <li class="breadcrambs-item"><a class="breadcrambs-link" href="./index.html">
+                <span class="visually-hidden">Главная</span>
+              </a></li>
+            <li class="breadcrambs-item"><a class="breadcrambs-link">Гостиницы</a></li>
+          </ul>
+
+          <section class="hero-filter">
+            <h2 class="visually-hidden">Фильтр гостиниц</h2>
+            <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="filter-box">
+                <legend class="filter-title">Инфраструктура:</legend>
+                <ul class="filter-list">
+                  <li class="filter-item"><label class="filter-label">
+                      <input class="filter-check" type="checkbox" name="pool" checked>
+                      Бассейн
+                    </label></li>
+                  <li class="filter-item"><label class="filter-label">
+                      <input class="filter-check" type="checkbox" name="parking" checked>
+                      Парковка
+                    </label></li>
+                  <li class="filter-item"><label class="filter-label">
+                      <input class="filter-check" type="checkbox" name="wi-fi">
+                      Wi-Fi
+                    </label></li>
+                </ul>
+              </fieldset>
+
+              <fieldset class="filter-box">
+                <legend class="filter-title">Тип жилья:</legend>
+                <ul class="filter-list">
+                  <li class="filter-item"><label class="filter-label">
+                      <input class="filter-check" type="radio" name="type-house" value="hotel" checked>
+                      Гостиница
+                    </label></li>
+                  <li class="filter-item"><label class="filter-label">
+                      <input class="filter-check" type="radio" name="type-house" value="motel">
+                      Мотель
+                    </label></li>
+                  <li class="filter-item"><label class="filter-label">
+                      <input class="filter-check" type="radio" name="type-house" value="apartments">
+                      Апартаменты
+                    </label></li>
+                </ul>
+              </fieldset>
+
+              <button class="filter-apply" type="submit">Применить</button>
+              <button class="filter-reset" type="submit">Сбросить</button>
+            </form>
+          </section>
+        </header>
+
+
+        <section class="catalog">
+          <h2 class="visually-hidden">Каталог гостиниц</h2>
+          <h3 class="hotels-found">
+            Найдено гостиниц: <span class="result">38</span>
+          </h3>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешевые</option>
+            <option value="dear">Сначала дорогие</option>
+            <option value="popular">По популярности</option>
+          </select>
+          <ul class="view-list">
+            <li class="view-item">
+              <a class="view-link" href="#">
+                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 0H0V6H4V0Z" fill="currentColor" />
+                  <path d="M16 0H12V6H16V0Z" fill="currentColor" />
+                  <path d="M10 0H6V6H10V0Z" fill="currentColor" />
+                  <path d="M4 8H0V14H4V8Z" fill="currentColor" />
+                  <path d="M16 8H12V14H16V8Z" fill="currentColor" />
+                  <path d="M10 8H6V14H10V8Z" fill="currentColor" />
+                </svg>
+                <span class="visually-hidden">Показать плитками</span>
+              </a>
+            </li>
+            <li class="view-item">
+              <a class="view-link" href="#">
+                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 12H0V14H16V12Z" fill="black" />
+                  <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="currentColor" />
+                </svg>
+                <span class="visually-hidden">Показать слайдшоу</span>
+              </a>
+            </li>
+            <li class="view-item">
+              <a class="view-link" href="#">
+                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 0H0V2H2V0Z" fill="currentColor" />
+                  <path d="M16 0H4V2H16V0Z" fill="currentColor" />
+                  <path d="M2 4H0V6H2V4Z" fill="currentColor" />
+                  <path d="M16 4H4V6H16V4Z" fill="currentColor" />
+                  <path d="M2 8H0V10H2V8Z" fill="currentColor" />
+                  <path d="M16 8H4V10H16V8Z" fill="currentColor" />
+                  <path d="M2 12H0V14H2V12Z" fill="currentColor" />
+                  <path d="M16 12H4V14H16V12Z" fill="currentColor" />
+                </svg>
+                <span class="visually-hidden">Показать списком</span>
+              </a>
+            </li>
+          </ul>
+        </section>
 
         <section class="subscription-inner">
           <div class="subscription-box">
