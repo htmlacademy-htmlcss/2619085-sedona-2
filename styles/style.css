@@ -710,12 +710,157 @@ body {
 	min-height: 412px;
 	box-sizing: border-box;
 	color: #ffffff;
+	padding: 0 70px;
 }
 
+.header-inner-title {
+	margin: 0;
+	padding: 35px 0 6px;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 78px;
+}
 
+.breadcrambs {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	gap: 23px;
+}
 
+.breadcrambs-item:not(:first-child) {
+	list-style-image: url(../images/icons/breadcrambs.svg);
+	padding-left: 8px;
+}
 
+.breadcrambs-link {
+	display: block;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+}
 
+.hero-filter {}
+
+.hotels-filter {
+	display: grid;
+	grid-template-columns: 150px 150px 288px 191px;
+	column-gap: 70px;
+	padding: 40px 0 40px;
+}
+
+.filter-box {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.filter-title {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	padding-bottom: 34px;
+}
+
+.filter-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.filter-item {}
+
+.filter-label {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
+}
+
+.filter-check {}
+
+.range-form {}
+
+.range-label {}
+
+.range-input {}
+
+.range-box {
+	padding-top: 20px;
+}
+
+.range-scale {
+	position: relative;
+	height: 4px;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+	position: absolute;
+	height: 4px;
+	background-color: #ffffff;
+}
+
+.range-toggle {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: #ffffff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.toggle-min {
+	top: -8px;
+	left: -10px;
+}
+
+.toggle-max {
+	top: -8px;
+	right: -10px;
+}
+
+.filter-bottom {
+	font-family: inherit;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #82B3D3;
+	padding: 8px 50px;
+	border: none;
+	border-radius: 4px;
+	grid-column: 4;
+
+	justify-self: center;
+	align-self: center;
+}
+
+.reset {
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.catalog {}
+
+.hotels-found {}
+
+.result {}
+
+.select-control {}
+
+.view-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.view-item {}
+
+.view-link {}
 
 
 /* ПОДПИСКА */
