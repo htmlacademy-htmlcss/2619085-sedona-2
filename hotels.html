@@ -65,7 +65,7 @@
               </a>
             </li>
             <li class="breadcrambs-item">
-              <a class="breadcrambs-link">Гостиницы</a>
+              <a class="breadcrambs-link" href="#" tabindex="-1">Гостиницы</a>
             </li>
           </ul>
 
@@ -78,16 +78,16 @@
                   <ul class="filter-list">
                     <li class="filter-item">
                       <input class="filter-check control visually-hidden" type="checkbox" name="pool" id="pool" checked>
-                      <label class="filter-label control-label checkbox" for="pool">Бассейн</label>
+                      <label class="filter-label control-label checkbox" for="pool" tabindex="0">Бассейн</label>
                     </li>
                     <li class="filter-item">
                       <input class="filter-check control visually-hidden" type="checkbox" name="parking" id="parking"
                         checked>
-                      <label class="filter-label control-label checkbox" for="parking">Парковка</label>
+                      <label class="filter-label control-label checkbox" for="parking" tabindex="0">Парковка</label>
                     </li>
                     <li class="filter-item">
                       <input class="filter-check control visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
-                      <label class="filter-label control-label checkbox" for="wi-fi">Wi-Fi</label>
+                      <label class="filter-label control-label checkbox" for="wi-fi" tabindex="0">Wi-Fi</label>
                     </li>
                   </ul>
                 </fieldset>
@@ -97,17 +97,18 @@
                     <li class="filter-item">
                       <input class="filter-check control visually-hidden" type="radio" name="type-house" id="hotel"
                         value="hotel" checked>
-                      <label class="filter-label control-label radiobox" for="hotel">Гостиница</label>
+                      <label class="filter-label control-label radiobox" for="hotel" tabindex="0">Гостиница</label>
                     </li>
                     <li class="filter-item">
                       <input class="filter-check control visually-hidden" type="radio" name="type-house" id="motel"
                         value="motel">
-                      <label class="filter-label control-label radiobox" for="motel">Мотель</label>
+                      <label class="filter-label control-label radiobox" for="motel" tabindex="0">Мотель</label>
                     </li>
                     <li class="filter-item">
                       <input class="filter-check control visually-hidden" type="radio" name="type-house" id="apartments"
                         value="apartments">
-                      <label class="filter-label control-label radiobox" for="apartments">Апартаменты</label>
+                      <label class="filter-label control-label radiobox" for="apartments"
+                        tabindex="0">Апартаменты</label>
                     </li>
                   </ul>
                 </fieldset>
@@ -139,111 +140,157 @@
                   </div>
                 </fieldset>
                 <div class="button-box">
-                  <button class="filter-button" type="submit">Применить</button>
-                  <button class="filter-button reset" type="button">Сбросить</button>
+                  <button class="filter-button apply" type="submit">Применить</button>
+                  <button class="filter-button reset" type="reset">Сбросить</button>
                 </div>
               </div>
             </form>
           </section>
         </header>
-        <section class="sorting">
-          <h2 class="visually-hidden">Сортировка каталога</h2>
-          <h3 class="hotels-found">
-            Найдено гостиниц: <span class="result">38</span>
-          </h3>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешевые</option>
-            <option value="dear">Сначала дорогие</option>
-            <option value="popular">По популярности</option>
-          </select>
-          <ul class="view-list">
-            <li class="view-item">
-              <a class="view-link tiles" href="#">
-                <span class="visually-hidden">Показать плитками</span>
-              </a>
-            </li>
-            <li class="view-item">
-              <a class="view-link slideshow" href="#">
-                <span class="visually-hidden">Показать слайдшоу</span>
-              </a>
-            </li>
-            <li class="view-item">
-              <a class="view-link list" href="#">
-                <span class="visually-hidden">Показать списком</span>
-              </a>
-            </li>
-          </ul>
-        </section>
-
         <section class="catalog">
           <h2 class="visually-hidden">Список гостиниц</h2>
+          <div class="sorting">
+            <h3 class="hotels-found">
+              Найдено гостиниц: <span class="result">38</span>
+            </h3>
+            <select class="select-control" name="select-control" aria-label="Сортировка">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="dear">Сначала дорогие</option>
+              <option value="popular">По популярности</option>
+            </select>
+            <ul class="view-list">
+              <li class="view-item">
+                <a class="view-link tiles view-link-active" href="#">
+                  <span class="visually-hidden">Показать плитками</span>
+                </a>
+              </li>
+              <li class="view-item">
+                <a class="view-link slideshow" href="#">
+                  <span class="visually-hidden">Показать слайдшоу</span>
+                </a>
+              </li>
+              <li class="view-item">
+                <a class="view-link list" href="#">
+                  <span class="visually-hidden">Показать списком</span>
+                </a>
+              </li>
+            </ul>
+          </div>
           <ul class="card-list">
             <li class="card-items">
-              <img class="card-img" src="./images/catalog/hotel-1.jpg" alt="" width="300" height="212">
-              <h3 class="card-title">Amara Resort & Spa</h3>
+              <a class="card-link" href="#">
+                <img class="card-img" src="./images/catalog/hotel-1.jpg" alt="Курортный спа-отель Амара." width="300"
+                  height="212">
+                <h3 class="card-title">Amara Resort & Spa</h3>
+              </a>
+
               <div class="car-text">
                 <p class="type-house">Гостиница</p>
                 <p class="price">От 4000 ₽</p>
               </div>
               <div class="card-button">
-                <a class="details" href="#">подробнее</a>
-                <button class="to-favorites" type="button">в избранное</button>
+                <a class="card-btn details" href="#">подробнее</a>
+                <button class="card-btn to-favorites" type="button">в избранное</button>
               </div>
               <div class="rating">
-                <span class="rating-stars"></span>
-                <span class="rating-numbers">Рейтинг: 8,5</span>
+                <span class="rating-stars stars-four">
+                  <span class="visually-hidden">Количество звезд: 4</span>
+                </span>
+                <span class="card-btn rating-numbers">Рейтинг: 8,5</span>
               </div>
             </li>
             <li class="card-items">
-              <img class="card-img" src="./images/catalog/hotel-2.jpg" alt="" width="300" height="212">
-              <h3 class="card-title">Villas at Poco Diablo</h3>
+              <a class="card-link" href="#">
+                <img class="card-img" src="./images/catalog/hotel-2.jpg" alt="Виллы в Поко-Диабло." width="300"
+                  height="212">
+                <h3 class="card-title">Villas at Poco Diablo</h3>
+              </a>
+
               <div class="car-text">
                 <p class="type-house">Гостиница</p>
                 <p class="price">От 5000 ₽</p>
               </div>
               <div class="card-button">
-                <a class="details" href="#">подробнее</a>
-                <button class="in-favorites" type="button">в избранном</button>
+                <a class="card-btn details" href="#">подробнее</a>
+                <button class="card-btn in-favorites" type="button">в избранном</button>
               </div>
               <div class="rating">
-                <span class="rating-stars"></span>
-                <span class="rating-numbers">Рейтинг: 9,2</span>
+                <span class="rating-stars stars-four">
+                  <span class="visually-hidden">Количество звезд: 4</span>
+                </span>
+                <span class="card-btn rating-numbers">Рейтинг: 9,2</span>
               </div>
             </li>
             <li class="card-items">
-              <img class="card-img" src="./images/catalog/hotel-3.jpg" alt="" width="300" height="212">
-              <h3 class="card-title">Desert Quail Inn</h3>
+              <a class="card-link" href="#">
+                <img class="card-img" src="./images/catalog/hotel-3.jpg" alt="Гостиница Перепелка в пустыне."
+                  width="300" height="212">
+                <h3 class="card-title">Desert Quail Inn</h3>
+              </a>
+
               <div class="car-text">
                 <p class="type-house">Гостиница</p>
                 <p class="price">От 2500 ₽</p>
               </div>
               <div class="card-button">
-                <a class="details" href="#">подробнее</a>
-                <button class="to-favorites" type="button">в избранное</button>
+                <a class="card-btn details" href="#">подробнее</a>
+                <button class="card-btn to-favorites" type="button">в избранное</button>
               </div>
               <div class="rating">
-                <span class="rating-stars"></span>
-                <span class="rating-numbers">Рейтинг: 6,9</span>
+                <span class="rating-stars stars-three">
+                  <span class="visually-hidden">Количество звезд: 3</span>
+                </span>
+                <span class="card-btn rating-numbers">Рейтинг: 6,9</span>
               </div>
             </li>
             <li class="card-items">
-              <img class="card-img" src="./images/catalog/hotel-4.jpg" alt="" width="300" height="212">
-              <h3 class="card-title">GreenTree Inn</h3>
+              <a class="card-link" href="#">
+                <img class="card-img" src="./images/catalog/hotel-4.jpg" alt="Гостиница Гринтри Инн." width="300"
+                  height="212">
+                <h3 class="card-title">GreenTree Inn</h3>
+              </a>
+
               <div class="car-text">
                 <p class="type-house">Гостиница</p>
                 <p class="price">От 1500 ₽</p>
               </div>
               <div class="card-button">
-                <a class="details" href="#">подробнее</a>
-                <button class="to-favorites" type="button">в избранное</button>
+                <a class="card-btn details" href="#">подробнее</a>
+                <button class="card-btn to-favorites" type="button">в избранное</button>
               </div>
               <div class="rating">
-                <span class="rating-stars"></span>
-                <span class="rating-numbers">Рейтинг: 5,0</span>
+                <span class="rating-stars stars-two">
+                  <span class="visually-hidden">Количество звезд: 2</span>
+                </span>
+                <span class="card-btn rating-numbers">Рейтинг: 5,0</span>
               </div>
             </li>
           </ul>
         </section>
+
+        <sectuon class="pagination">
+          <h2 class="visually-hidden">Нумерация страниц</h2>
+          <ul class="pagination-list">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-active" href="#" tabindex="-1">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link points" href="#" tabindex="-1">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ul>
+        </sectuon>
 
         <section class="subscription">
           <div class="subscription-box">

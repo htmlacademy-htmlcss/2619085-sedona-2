@@ -154,7 +154,7 @@
             Укажите предполагаемые даты поездки,
             <br>и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <a class="hotels-link" href="#">Поиск гостиницы в Седоне</a>
+          <button class="search-button" type="button">Поиск гостиницы в Седоне</button>
         </section>
         <section class="subscription subscription-index">
           <div class="subscription-box">
@@ -250,6 +250,39 @@
 
       </footer>
     </div>
+    <section class="modal">
+      <div class="modal-window">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+          <ul class="modal-form-list">
+            <li class="modal-form-item date">
+              <label class="modal-form-label" for="сheck-in">Дата заезда</label>
+              <input class="modal-form-input" type="date" name="сheck-in" id="сheck-in" placeholder="27 апреля 2020"
+                required>
+            </li>
+            <li class="modal-form-item date">
+              <label class="modal-form-label" for="check-out">Дата выезда:</label>
+              <input class="modal-form-input" type="date" name="check-out" id="check-out" required>
+            </li>
+            <li class="modal-form-item people">
+              <label class="modal-form-label" for="parents">Взрослые:</label>
+              <input class="modal-form-input" type="number" name="parents" id="parents" min="1" required>
+            </li>
+            <li class="modal-form-item people">
+              <label class="modal-form-label" for="children">Дети:</label>
+              <input class="modal-form-input" type="number" name="children" id="children" min="0" required>
+            </li>
+          </ul>
+
+          <button class="modal-button" type="submit">Найти</button>
+        </form>
+        <button class="close-modal" type="button">
+          <span class="visually-hidden">Закрыть окно поиска</span>
+        </button>
+      </div>
+    </section>
+
+    <script src="./scripts/script.js"></script>
   </body>
 
 </html>
