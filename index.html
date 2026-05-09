@@ -23,7 +23,7 @@
               <a class="nav-link" href="#">О Седоне</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./hotels.html">Гостиницы</a>
+              <a class="nav-link" href="./catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="user-nav">
@@ -253,27 +253,76 @@
     <section class="modal">
       <div class="modal-window">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
           <ul class="modal-form-list">
-            <li class="modal-form-item date">
-              <label class="modal-form-label" for="сheck-in">Дата заезда</label>
-              <input class="modal-form-input" type="date" name="сheck-in" id="сheck-in" placeholder="27 апреля 2020"
-                required>
+            <li class="modal-form-item">
+              <label class="modal-form-label" for="сheck-in">Дата заезда:</label>
+              <div class="modal-date-box">
+                <input class="modal-form-input input-date" type="text" name="сheck-in" id="сheck-in"
+                  placeholder="Укажите дату" value="27 апреля 2020" required>
+                <p class="message error">Мы не можем отправить вас в прошлое.</p>
+              </div>
             </li>
-            <li class="modal-form-item date">
+            <li class="modal-form-item">
               <label class="modal-form-label" for="check-out">Дата выезда:</label>
-              <input class="modal-form-input" type="date" name="check-out" id="check-out" required>
-            </li>
-            <li class="modal-form-item people">
-              <label class="modal-form-label" for="parents">Взрослые:</label>
-              <input class="modal-form-input" type="number" name="parents" id="parents" min="1" required>
-            </li>
-            <li class="modal-form-item people">
-              <label class="modal-form-label" for="children">Дети:</label>
-              <input class="modal-form-input" type="number" name="children" id="children" min="0" required>
+              <div class="modal-date-box">
+                <input class="modal-form-input input-date" type="text" name="check-out" id="check-out"
+                  placeholder="Укажите дату" value="1 сентября 2023" required>
+                <p class="message">На эти даты есть свободные номера. Пока есть.</p>
+              </div>
             </li>
           </ul>
-
+          <ul class="modal-form-list people">
+            <li class="modal-form-item item-people">
+              <label class="modal-form-label" for="parents">Взрослые:</label>
+              <div class="modal-people-box">
+                <button class="spinners minus" type="button">
+                  <svg width="20" height="20" viewBox="0 0 20 20" aria-label="Уменьшить количество взрослых на один"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z" fill="currentColor" />
+                  </svg>
+                </button>
+                <input class="modal-form-input input-people" type="number" name="parents" id="parents" min="1" value="2"
+                  required>
+                <button class="spinners plus" type="button">
+                  <svg width="20" height="20" viewBox="0 0 20 20" aria-label="Увеличить количество взрослых на один"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="modal-form-item item-people">
+              <div class="popover">
+                <div class="popover-box">
+                  <label class="modal-form-label" for="children">Дети:</label>
+                  <div class="modal-info">
+                    <button class="popover-btn" type="button">
+                      <span class="visually-hidden">Дополнительная информация о возрасте детей</span>
+                    </button>
+                    <p class="info-show">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                      лет. Дети до 6 лет размещаются бесплатно.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-people-box">
+                <button class="spinners minus" type="button">
+                  <svg width="20" height="20" viewBox="0 0 20 20" aria-label="Уменьшить количество детей на один"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z" fill="currentColor" />
+                  </svg>
+                </button>
+                <input class="modal-form-input input-people" type="number" name="children" id="children" min="0"
+                  value="2" required>
+                <button class="spinners plus" type="button">
+                  <svg width="20" height="20" viewBox="0 0 20 20" aria-label="Увеличить количество детей на один"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </ul>
           <button class="modal-button" type="submit">Найти</button>
         </form>
         <button class="close-modal" type="button">

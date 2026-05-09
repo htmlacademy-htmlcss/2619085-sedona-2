@@ -2,6 +2,7 @@ const openModalButton = document.querySelector('.search-button');
 const modal = document.querySelector('.modal');
 const closeModalButton = document.querySelector('.close-modal');
 
+
 openModalButton.addEventListener('click', () => {
     modal.classList.add('modal-show');
 });
