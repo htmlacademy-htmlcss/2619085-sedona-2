@@ -39,10 +39,6 @@ body {
 	padding: 0;
 }
 
-.button {}
-
-
-
 .container {
 	display: flex;
 	flex-direction: column;
@@ -60,7 +56,7 @@ body {
 .logo-link {
 	position: absolute;
 	top: 0;
-	left: 71px;
+	left: 70px;
 }
 
 .logo-link:hover {
@@ -79,7 +75,7 @@ body {
 .header-nav {
 	display: flex;
 	justify-content: space-between;
-	margin-left: 239px;
+	margin-left: 238px;
 	margin-right: 70px;
 }
 
@@ -123,11 +119,12 @@ body {
 .active::before {
 	position: absolute;
 	content: "";
-	width: 68px;
+	width: calc(100% - 32px);
 	height: 2px;
 	background-color: #756257;
 	bottom: -1px;
-	left: calc(50% - 34px);
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .user-nav {
@@ -137,7 +134,7 @@ body {
 	flex-wrap: wrap;
 	justify-content: flex-end;
 	margin: 0;
-	padding: 14px 0 14px;
+	padding: 14px 0;
 }
 
 .user-nav-link {
@@ -148,7 +145,7 @@ body {
 	text-decoration: none;
 	text-align: center;
 	box-sizing: border-box;
-	padding: 9px 44px 0 0;
+	padding: 10px 45px 0 0;
 }
 
 .search {
@@ -200,8 +197,8 @@ body {
 	background-color: #7db54f;
 	border-radius: 12px;
 	position: absolute;
-	left: 7px;
-	top: -4px;
+	left: 6px;
+	top: -3px;
 	box-sizing: border-box;
 	padding: 5px;
 }
@@ -213,7 +210,7 @@ body {
 	line-height: 20px;
 	max-width: 300px;
 	padding: 8px 34px;
-	margin-left: 8px;
+	margin-left: 6px;
 }
 
 .wish:hover {
@@ -247,14 +244,14 @@ body {
 .welkome-img {
 	display: block;
 	margin: 0 auto;
-	padding: 49px 0 84px;
+	padding: 50px 0 84px;
 }
 
 .description {
 	text-align: center;
 	max-width: 700px;
 	margin: 0 auto;
-	padding: 68px 0 65px;
+	padding: 68px 0 66px;
 }
 
 .description-title {
@@ -262,7 +259,7 @@ body {
 	font-size: 30px;
 	line-height: 36px;
 	text-transform: uppercase;
-	margin: 0 0 26px;
+	margin: 0 0 25px;
 }
 
 .description-text {
@@ -333,7 +330,7 @@ body {
 }
 
 .reasons-box-img {
-	padding: 90px 0 90px;
+	padding: 89px 0;
 }
 
 .reasons-list-img {
@@ -345,7 +342,7 @@ body {
 
 .reasons-img-title {
 	color: #ffffff;
-	padding: 12px 0 20px;
+	padding: 13px 0 20px;
 }
 
 .reasons-img-title::before {
@@ -367,7 +364,7 @@ body {
 	max-width: 600px;
 	box-sizing: border-box;
 	margin: 0 auto;
-	padding: 65px 0 44px;
+	padding: 64px 0 44px;
 }
 
 .invite-title {
@@ -462,12 +459,13 @@ body {
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 26px;
-	margin: 0 0 54px;
+	margin: 0 0 55px;
 }
 
 .search-button {
-	display: inline-block;
+	width: 376px;
 	color: #ffffff;
+	font-family: inherit;
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 36px;
@@ -477,7 +475,7 @@ body {
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-	padding: 9px 50px;
+	padding: 8px;
 	margin: 0;
 }
 
@@ -529,7 +527,7 @@ body {
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 26px;
-	margin: 0 0 30px;
+	margin: 0 0 31px;
 }
 
 .subscription-index .subscription-text {
@@ -577,11 +575,12 @@ body {
 	line-height: 36px;
 	text-align: center;
 	text-transform: uppercase;
-	background-color: #82B3D3;
+	background-color: #82b3d3;
 	border: none;
-	border-top-right-radius: 4px;
-	border-bottom-right-radius: 4px;
-	padding: 8px 51px;
+	border-radius: 0 4px 4px 0;
+	width: 244px;
+	min-height: 52px;
+	padding: 8px 8px;
 }
 
 .form-button:hover {
@@ -601,15 +600,14 @@ body {
 
 .footer {
 	display: flex;
-	column-gap: 192px;
-	min-height: 120px;
+	justify-content: space-between;
 	box-sizing: border-box;
 	padding: 46px 72px 20px;
 }
 
 .social-list {
 	list-style: none;
-	width: 150px;
+	width: 141px;
 	min-height: 40px;
 	display: flex;
 	flex-wrap: wrap;
@@ -668,10 +666,9 @@ body {
 }
 
 .academy-link {
-	color: #000000;
-	width: 125px;
-	text-align: end;
 	display: block;
+	color: #000000;
+	text-align: end;
 }
 
 .academy-link:hover {
@@ -783,7 +780,7 @@ body {
 .filter-left {
 	display: flex;
 	flex-wrap: wrap;
-	column-gap: 70px;
+	gap: 32px 70px;
 }
 
 .filter-right {
@@ -793,7 +790,7 @@ body {
 }
 
 .filter-box {
-	margin: 0;
+	margin: 0 0 32px;
 	padding: 0;
 	border: none;
 }
@@ -943,10 +940,13 @@ body {
 .range-input:focus-visible {
 	background-color: #e5e5e5;
 	outline: 3px solid #83b3d3;
+	position: relative;
+	z-index: 5;
 }
 
 .range-label {
 	font-family: inherit;
+	color: #000000;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 24px;
@@ -1087,7 +1087,7 @@ body {
 	flex-wrap: wrap;
 	min-height: 49px;
 	gap: 38px;
-	margin: 0 0 39px;
+	margin: 0 0 40px;
 }
 
 .hotels-found {
@@ -1152,15 +1152,16 @@ body {
 }
 
 .view-link:hover {
-	outline: 2px solid #000000;
+	border: 2px solid #000000;
 }
 
 .view-link:focus-visible {
-	outline: 2px solid #68a2ca;
+	border: 2px solid #68a2ca;
+	outline: none;
 }
 
 .view-link:active {
-	outline: 2px solid #000000;
+	border: 2px solid #000000;
 }
 
 .tiles {
@@ -1369,7 +1370,7 @@ body {
 	flex-wrap: wrap;
 	gap: 8px;
 	margin: 0 0 21px;
-	padding: 40px 70px;
+	padding: 39px 70px;
 }
 
 .pagination-link {
@@ -1551,7 +1552,7 @@ body {
 	background-color: #e5e5e5;
 }
 
-.input-date .input-date .message {
+.message {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 21px;
