@@ -26,7 +26,6 @@
               <a class="nav-link  active" href="#">Гостиницы</a>
             </li>
           </ul>
-          </ul>
           <ul class="user-nav">
             <li class="user-nav-item">
               <a class="user-nav-link search" href="#">
@@ -128,10 +127,10 @@
                   <div class="range-box">
                     <div class="range-scale">
                       <div class="range-bar" style="left: 0; width: 226px">
-                        <button class="range-toggle toggle-min" type="button">
+                        <button class="range-toggle" style="top: -8px; left: 0" type="button">
                           <span class="visually-hidden">Изменить минимальную цену</span>
                         </button>
-                        <button class="range-toggle toggle-max" type="button">
+                        <button class="range-toggle" style="top: -8px; right: 0" type="button">
                           <span class="visually-hidden">Изменить максимальную цену</span>
                         </button>
                       </div>
@@ -159,17 +158,17 @@
             </select>
             <ul class="view-list">
               <li class="view-item">
-                <a class="view-link tiles view-link-active" href="#">
+                <a class="view-link tiles view-link-active" href="catalog.html?view=tile">
                   <span class="visually-hidden">Показать плитками</span>
                 </a>
               </li>
               <li class="view-item">
-                <a class="view-link slideshow" href="#">
+                <a class="view-link cards" href="catalog.html?view=card">
                   <span class="visually-hidden">Показать слайдшоу</span>
                 </a>
               </li>
               <li class="view-item">
-                <a class="view-link list" href="#">
+                <a class="view-link list" href="catalog.html?view=list">
                   <span class="visually-hidden">Показать списком</span>
                 </a>
               </li>
@@ -183,7 +182,7 @@
                 <h3 class="card-title">Amara Resort & Spa</h3>
               </a>
 
-              <div class="car-text">
+              <div class="card-text">
                 <p class="type-house">Гостиница</p>
                 <p class="price">От 4000 ₽</p>
               </div>
@@ -205,7 +204,7 @@
                 <h3 class="card-title">Villas at Poco Diablo</h3>
               </a>
 
-              <div class="car-text">
+              <div class="card-text">
                 <p class="type-house">Гостиница</p>
                 <p class="price">От 5000 ₽</p>
               </div>
@@ -227,7 +226,7 @@
                 <h3 class="card-title">Desert Quail Inn</h3>
               </a>
 
-              <div class="car-text">
+              <div class="card-text">
                 <p class="type-house">Гостиница</p>
                 <p class="price">От 2500 ₽</p>
               </div>
@@ -249,7 +248,7 @@
                 <h3 class="card-title">GreenTree Inn</h3>
               </a>
 
-              <div class="car-text">
+              <div class="card-text">
                 <p class="type-house">Гостиница</p>
                 <p class="price">От 1500 ₽</p>
               </div>
@@ -267,7 +266,7 @@
           </ul>
         </section>
 
-        <sectuon class="pagination">
+        <section class="pagination">
           <h2 class="visually-hidden">Нумерация страниц</h2>
           <ul class="pagination-list">
             <li class="pagination-item">
@@ -289,7 +288,7 @@
               <a class="pagination-link" href="#">10</a>
             </li>
           </ul>
-        </sectuon>
+        </section>
 
         <section class="subscription">
           <div class="subscription-box">
@@ -344,7 +343,8 @@
         <div>
           <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </div>
-        <div><a class="academy-link" href="https://htmlacademy.ru/">
+        <div>
+          <a class="academy-link" href="https://htmlacademy.ru/">
             <svg width="115" height="33" viewBox="0 0 115 33" role="img" aria-label="Логотип HTML академии" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M0 12.9V15.5H2.5V12.9H0Z" fill="black" />
@@ -381,7 +381,8 @@
                 d="M109.4 27L105.8 18.1H103.6L108.4 29.7C108.1 30.6 107.7 30.9 106.7 30.9H104.2V32.9H106.7C108.5 32.9 109.5 32.1 110.2 30.3L114.9 18.1H112.8L109.4 27Z"
                 fill="currentColor" />
             </svg>
-          </a></div>
+          </a>
+        </div>
       </footer>
     </div>
   </body>
