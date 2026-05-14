@@ -359,8 +359,8 @@ body {
 
 .reasons-img {
 	display: block;
-	min-width: 800px;
-	height: auto;
+	width: 100%;
+	height: 385px;
 	object-fit: cover;
 }
 
@@ -495,6 +495,12 @@ body {
 	background-color: #756157;
 }
 
+.search-button:disabled {
+	color: #ffffff;
+	background-color: #e5e5e5;
+	cursor: default;
+}
+
 .subscription {
 	min-height: 414px;
 	box-sizing: border-box;
@@ -594,6 +600,11 @@ body {
 .form-button:active {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #68a2ca;
+}
+
+.form-button:disabled {
+	color: #ffffff;
+	background-color: #e5e5e5;
 }
 
 
@@ -892,17 +903,22 @@ body {
 	opacity: 30%;
 }
 
-.filter-label {
-	font-size: 18px;
-	line-height: 23px;
-}
-
 .filter-check:focus-visible + .checkbox::before {
 	outline: 3px solid #83b3d3;
 }
 
 .filter-check:focus-visible + .radiobox::before {
 	outline: 3px solid #83b3d3;
+}
+
+.control:disabled + .control-label {
+	opacity: 10%;
+	cursor: default;
+}
+
+.filter-label {
+	font-size: 18px;
+	line-height: 23px;
 }
 
 .range-form {
@@ -1048,6 +1064,11 @@ body {
 	background-color: #68a2ca;
 }
 
+.apply:disabled {
+	color: #ffffff;
+	background-color: #e5e5e5;
+}
+
 .reset {
 	padding: 8px 50px;
 	background-color: rgba(255, 255, 255, 0);
@@ -1058,12 +1079,17 @@ body {
 }
 
 .reset:focus-visible {
-	outline: 3px solid #83b3d3;
+	border: 3px solid #83b3d3;
+	outline: none;
 }
 
 .reset:active {
 	opacity: 30%;
 	outline: none;
+}
+
+.reset:disabled {
+	opacity: 10%;
 }
 
 .catalog {
@@ -1220,8 +1246,9 @@ body {
 }
 
 .card-img {
-	min-width: 300px;
-	height: auto;
+	display: block;
+	width: 100%;
+	height: 212px;
 	object-fit: cover;
 }
 
@@ -1309,6 +1336,11 @@ body {
 	color: rgba(255, 255, 255, 0.3);
 }
 
+.to-favorites:disabled {
+	background-color: #e5e5e5;
+	color: #ffffff;
+}
+
 .in-favorites {
 	background-color: #7db54f;
 	cursor: pointer;
@@ -1326,6 +1358,11 @@ body {
 .in-favorites:active {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #7db54f;
+}
+
+.in-favorites:disabled {
+	background-color: #e5e5e5;
+	color: #ffffff;
 }
 
 .rating {
@@ -1392,11 +1429,13 @@ body {
 
 .pagination-link:hover {
 	background-color: #68a2ca;
+	border: 1px solid #82b3d3;
 }
 
 .pagination-link:focus-visible {
 	outline: none;
 	background-color: #68a2ca;
+	border: 1px solid #82b3d3;
 }
 
 .pagination-link:active {
@@ -1706,4 +1745,9 @@ body {
 .modal-button:active {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #68a2ca;
+}
+
+.modal-button:disabled {
+	color: #ffffff;
+	background-color: #e5e5e5;
 }
