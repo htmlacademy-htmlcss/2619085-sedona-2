@@ -134,39 +134,22 @@ body {
 	flex-wrap: wrap;
 	justify-content: flex-end;
 	width: 320px;
+	gap: 9px;
 	margin: 0;
 	padding: 14px 0;
 	list-style: none;
 }
 
 .user-nav-link {
-	display: block;
-	box-sizing: border-box;
-	padding: 10px 45px 0 0;
-	font-weight: 700;
-	text-decoration: none;
-	text-align: center;
-	color: #ffffff;
-	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .search {
 	width: 36px;
 	height: 36px;
 	color: #000000;
-}
-
-.search:hover {
-	color: #756157;
-}
-
-.search:focus-visible {
-	color: #756157;
-	outline: none;
-}
-
-.search:active {
-	color: rgba(117, 97, 87, 0.3);
 }
 
 .favorite {
@@ -176,22 +159,25 @@ body {
 	color: #000000;
 }
 
+.search:hover,
 .favorite:hover {
 	color: #756157;
 }
 
+.search:focus-visible,
 .favorite:focus-visible {
 	color: #756157;
 	outline: none;
 }
 
+.search:active,
 .favorite:active {
 	color: rgba(117, 97, 87, 0.3);
 }
 
 .favorite-number {
 	position: absolute;
-	left: 6px;
+	left: 15px;
 	top: -3px;
 	min-width: 20px;
 	height: 20px;
@@ -207,9 +193,13 @@ body {
 .wish {
 	max-width: 300px;
 	padding: 8px 34px;
-	margin-left: 6px;
+	margin-left: 15px;
 	font-size: 16px;
 	line-height: 20px;
+	color: #ffffff;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
 	background-color: #756157;
 	border-radius: 4px;
 }
@@ -294,7 +284,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
-	width: 230px;
+	width: 234px;
 	margin: 0 auto;
 	padding: 103px 0 90px;
 	gap: 30px;
@@ -324,9 +314,9 @@ body {
 
 .reasons-list-text {
 	margin: 0;
-	gap: 30px;
 	text-align: center;
 	color: #333333;
+	word-break: keep-all;
 }
 
 .reasons-box-img {
@@ -1167,7 +1157,6 @@ body {
 	width: 48px;
 	height: 48px;
 	box-sizing: border-box;
-	padding: 14px 12px;
 	background-repeat: no-repeat;
 	background-position: center;
 	border: 2px solid #e5e5e5;
@@ -1206,7 +1195,7 @@ body {
 .card-list {
 	display: grid;
 	grid-template-columns: 340px 340px 340px;
-	gap: 20px;
+	gap: 21px 20px;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -1254,7 +1243,7 @@ body {
 
 .card-title {
 	margin: 0;
-	padding: 12px 0 0;
+	padding: 16px 0 0;
 	font-size: 24px;
 	line-height: 28px;
 	font-weight: 700;
