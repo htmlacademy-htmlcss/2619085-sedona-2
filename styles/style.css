@@ -285,6 +285,7 @@ body {
 	flex-wrap: wrap;
 	flex-direction: column;
 	width: 234px;
+	box-sizing: border-box;
 	margin: 0 auto;
 	padding: 103px 0 90px;
 	gap: 30px;
@@ -1194,7 +1195,7 @@ body {
 
 .card-list {
 	display: grid;
-	grid-template-columns: 340px 340px 340px;
+	grid-template-columns: repeat(3, 340px);
 	gap: 21px 20px;
 	margin: 0;
 	padding: 0;
