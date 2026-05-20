@@ -10,7 +10,7 @@
 
   <body>
     <div class="container">
-      <header class="header">
+      <header class="header" data-test="header">
         <a class="header-logo-link" href="./index.html">
           <img class="header-logo-img" src="./images/logo/logo-sedona.svg" alt="Логотип Седоны" width="140" height="70">
         </a>
@@ -54,7 +54,7 @@
           </ul>
         </nav>
       </header>
-      <main class="main">
+      <main class="main" data-test="main">
         <header class="header-inner">
           <h1 class="header-inner-title">Гостиницы Седоны</h1>
           <ul class="breadcrambs">
@@ -68,7 +68,7 @@
             </li>
           </ul>
 
-          <section class="hero-filter">
+          <section class="hero-filter" data-test="filter">
             <h2 class="visually-hidden">Фильтры для поиска гостиниц</h2>
             <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
               <div class="filter-left">
@@ -145,7 +145,7 @@
             </form>
           </section>
         </header>
-        <section class="catalog">
+        <section class="catalog" data-test="catalog">
           <h2 class="visually-hidden">Список гостиниц</h2>
           <div class="sorting">
             <h3 class="sorting-title">
@@ -260,31 +260,31 @@
               </div>
             </li>
           </ul>
+          <div class="pagination">
+            <h2 class="visually-hidden">Нумерация страниц</h2>
+            <ul class="pagination-list">
+              <li class="pagination-item">
+                <a class="button pagination-link pagination-active">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="button pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="button pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="button pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="button pagination-link points">...</a>
+              </li>
+              <li class="pagination-item">
+                <a class="button pagination-link" href="#">10</a>
+              </li>
+            </ul>
+          </div>
         </section>
-        <section class="pagination">
-          <h2 class="visually-hidden">Нумерация страниц</h2>
-          <ul class="pagination-list">
-            <li class="pagination-item">
-              <a class="button pagination-link pagination-active">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="button pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="button pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="button pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="button pagination-link points">...</a>
-            </li>
-            <li class="pagination-item">
-              <a class="button pagination-link" href="#">10</a>
-            </li>
-          </ul>
-        </section>
-        <section class="subscription">
+        <section class="subscription" data-test="subscribe">
           <div class="subscription-box">
             <h2 class="subscription-title">Подпишитесь на рассылку</h2>
             <p class="subscription-text">
@@ -297,7 +297,7 @@
           </form>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" data-test="footer">
         <section class="social">
           <h2 class="visually-hidden">Социальные сети.</h2>
           <ul class="social-list">
