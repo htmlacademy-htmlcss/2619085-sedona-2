@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Дарья Чиркова](https://up.htmlacademy.ru/htmlcss-individual/2/user/2619085).
-* Наставник: `Неизвестно`.
+- Студент: [Дарья Чиркова](https://up.htmlacademy.ru/htmlcss-individual/2/user/2619085).
+- Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
 
 ---
 
