@@ -561,7 +561,7 @@ body {
   min-height: 414px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 96px 0 75px;
+  padding: 96px 0;
 }
 
 .subscription-index {
@@ -788,7 +788,7 @@ body {
   align-items: center;
   gap: 20px;
   padding: 0;
-  margin: 0;
+  margin: 0 0 40px;
   list-style: none;
 }
 
@@ -831,6 +831,10 @@ body {
   pointer-events: none;
 }
 
+.hero-filter {
+  width: 1065px;
+}
+
 .hotels-filter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -840,7 +844,7 @@ body {
   -webkit-column-gap: 143px;
   -moz-column-gap: 143px;
   column-gap: 143px;
-  margin: 40px 0 0;
+  margin: 0;
 }
 
 .filter-left {
@@ -1146,9 +1150,7 @@ body {
 .catalog {
   width: 1060px;
   margin: 0 auto;
-  padding: 50px 0 42px;
-  -webkit-box-shadow: 0 1px 0 0 #e6e6e6;
-  box-shadow: 0 1px 0 0 #e6e6e6;
+  padding: 50px 0 21px;
 }
 
 .sorting {
@@ -1271,7 +1273,7 @@ body {
   -ms-grid-columns: 340px 20px 340px 20px 340px;
   grid-template-columns: repeat(3, 340px);
   gap: 21px 20px;
-  margin: 0;
+  margin: 0 0 42px;
   padding: 0;
   list-style: none;
 }
@@ -1448,6 +1450,11 @@ body {
   background: #f2f2f2;
 }
 
+.pagination {
+  -webkit-box-shadow: 0 -1px 0 0 #e6e6e6;
+  box-shadow: 0 -1px 0 0 #e6e6e6
+}
+
 .pagination-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1455,8 +1462,8 @@ body {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 0 0 21px;
-  padding: 39px 70px;
+  margin: 0;
+  padding: 39px 0;
   list-style: none;
 }
 
